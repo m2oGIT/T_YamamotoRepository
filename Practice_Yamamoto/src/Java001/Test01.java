@@ -21,6 +21,7 @@ public class Test01 {
 
     // 次の文字列が１度の実行で表示される
     System.out.println( "文字列の表示テスト。 " );
+    System.out.println( "文字列を追加。 " );
 
   }
 }
