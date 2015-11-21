@@ -1,29 +1,32 @@
 /**
  * Copyright 2015 EIS Co., Ltd. All rights reserved.
  */
-
 package Java001;
 
 /**
- * ã‚³ãƒ³ã‚½ãƒ¼ãƒ«è¡¨ç¤º <br />
- * ã‚³ãƒ³ã‚½ãƒ¼ãƒ«ã«è¡¨ç¤ºã™ã‚‹ <br />
- * æ›´æ–°å±¥æ­´ yyyy/mm/dd ï¼ˆæ›´æ–°è€…ï¼‰ï¼šæ–°è¦ä½œæˆ <br />
+ * @author iì¬Òj <br />
+ *  iƒNƒ‰ƒX˜_—–¼j <br />
+ *  ià–¾j <br />
+ *  XV—š—ğ yyyy/mm/dd iXVÒjFià–¾j <br />
  */
 public class Test01 {
 
   /**
-   * ãƒ¡ã‚¤ãƒ³ãƒ¡ã‚½ãƒƒãƒ‰ å‡¦ç†ã‚’èµ·å‹•ã—ã¾ã™ã€‚ <br />
-   * ã‚³ãƒ³ã‚½ãƒ¼ãƒ«ã«è¡¨ç¤ºã™ã‚‹ <br />
-   *
-   * @param args å®Ÿè¡Œæ™‚å¼•æ•°
+   * iƒRƒ“ƒXƒgƒ‰ƒNƒ^[˜_—–¼j <br />
+   * ià–¾j <br />
+   */
+  public Test01() {
+  }
+
+  /**
+   * iƒƒ\ƒbƒh˜_—–¼j <br />
+   * ià–¾j <br />
+   * @param args
    */
   public static void main( String[] args ) {
 
-    // æ¬¡ã®æ–‡å­—åˆ—ãŒï¼‘åº¦ã®å®Ÿè¡Œã§è¡¨ç¤ºã•ã‚Œã‚‹
-    System.out.print( "ï¼‘è¡Œç›®\nï¼’è¡Œç›®" );
-    System.out.println( "æ–‡å­—åˆ—ã®è¡¨ç¤ºãƒ†ã‚¹ãƒˆã€‚ " );
-    System.out.println( "æ–‡å­—åˆ—ã‚’è¿½åŠ ã€‚ " );
-    System.out.println( "å¾©å…ƒå¾Œã®æ›´æ–°ã§ã™ã€‚ " );
-    // GItHubã‹ã‚‰ã®æ›´æ–°ãƒ†ã‚¹ãƒˆã€‚
+    //•Ê’[––‚©‚çƒŠƒ|ƒWƒgƒŠ[‚ğXV‚·‚éƒeƒXƒg‚P
+
   }
+
 }
