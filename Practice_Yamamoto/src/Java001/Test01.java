@@ -20,9 +20,9 @@ public class Test01 {
   public static void main( String[] args ) {
 
     // 次の文字列が１度の実行で表示される
+    System.out.print( "１行目\n２行目" );
     System.out.println( "文字列の表示テスト。 " );
     System.out.println( "文字列を追加。 " );
     System.out.println( "復元後の更新です。 " );
-
   }
 }
