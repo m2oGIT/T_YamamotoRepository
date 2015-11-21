@@ -26,6 +26,7 @@ public class Test01 {
   public static void main( String[] args ) {
 
     //別端末からリポジトリーを更新するテスト１
+    //別端末からリポジトリーを更新するテスト１
 
   }
 
