@@ -1,0 +1,4 @@
+"SELECT * FROM moeiwast_eiwatest_DB01.test01_yamamoto ORDER BY STAFF_NO"
+"INSERT INTO moeiwast_eiwatest_DB01.test01_yamamoto VALUES (10000000005,'003','à§ïQÅ@ïPéq',160,'2015/05/01')"
+"UPDATE moeiwast_eiwatest_DB01.test01_yamamoto SET CREATE_DATE = CURDATE() WHERE STAFF_NO in (10000000005)"
+"DELETE FROM  moeiwast_eiwatest_DB01.test01_yamamoto WHERE STAFF_NO = 10000000005"
