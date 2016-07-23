@@ -1,0 +1,42 @@
+■問１の解答例SQL
+■問１　レコードの追加
+INSERT INTO moeiwast_eiwatest_DB01.test_table VALUES (12345, '山本', 123.456,' 2015/11/23');
+
+SELECT * FROM moeiwast_eiwatest_DB01.test_table;
+
+■問２　レコードの更新
+UPDATE moeiwast_eiwatest_DB01.test_table SET CREATE_DATE = '2015/11/23' WHERE INT_NUM = 12345 AND NAME_STR = '山本';
+
+SELECT * FROM moeiwast_eiwatest_DB01.test_table;
+
+■問３　SQLファイルの作成と実行
+
+\. C:\Users\takashi\Desktop\tools\02.work\Script_001.sql
+
+
+
+INSERT INTO
+ moeiwast_eiwatest_DB01.test_table
+VALUES
+ (00005, '山本', 123.456, '2087/12/31')
+;
+
+UPDATE
+ moeiwast_eiwatest_DB01.test_table
+SET
+ NAME_STR = '更新後です。'
+WHERE
+ INT_NUM = 00005
+AND
+ NAME_STR = '山本'
+;
+
+SELECT
+ *
+FROM
+ moeiwast_eiwatest_DB01.test_table
+ORDER BY
+ CREATE_DATE DESC
+;
+
+

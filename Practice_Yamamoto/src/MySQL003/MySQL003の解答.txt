@@ -1,0 +1,30 @@
+■ 問１　
+create table moeiwast_eiwatest_DB01.test01_yamamoto(STAFF_NO BIGINT(11), OFFICE_CD VARCHAR(3), STAFF_NAME VARCHAR(20), WORK_TIME INT(5), CREATE_DATE DATE, PRIMARY KEY(STAFF_NO,OFFICE_CD,STAFF_NAME)) character set sjis;
+
+■ 問２　
+INSERT INTO moeiwast_eiwatest_DB01.test01_yamamoto VALUES (10000000001,'001','東京　太郎',185,'2015/01/01');
+INSERT INTO moeiwast_eiwatest_DB01.test01_yamamoto VALUES (10000000002,'002','千葉　次郎',230,'2015/02/01');
+INSERT INTO moeiwast_eiwatest_DB01.test01_yamamoto VALUES (10000000003,'001','神奈川　花子',140,'2015/03/01');
+SELECT * FROM moeiwast_eiwatest_DB01.test01_yamamoto ORDER BY STAFF_NO,OFFICE_CD,STAFF_NAME;
+
+■ 問３　
+DELETE FROM  moeiwast_eiwatest_DB01.test01_yamamoto WHERE STAFF_NO = 10000000002;
+INSERT INTO moeiwast_eiwatest_DB01.test01_yamamoto VALUES (10000000004,'003','大阪　惠',190,'2015/04/01');
+SELECT * FROM moeiwast_eiwatest_DB01.test01_yamamoto ORDER BY STAFF_NO,OFFICE_CD,STAFF_NAME;
+
+
+■問４　
+UPDATE moeiwast_eiwatest_DB01.test01_yamamoto SET CREATE_DATE = CURDATE() WHERE STAFF_NO in (10000000001,10000000003,10000000004);
+SELECT * FROM moeiwast_eiwatest_DB01.test01_yamamoto ORDER BY STAFF_NO,OFFICE_CD,STAFF_NAME;
+
+
+■問５　
+DESC moeiwast_eiwatest_DB01.test01_yamamoto;
+ALTER TABLE  moeiwast_eiwatest_DB01.test01_yamamoto MODIFY STAFF_NO VARCHAR(11) NOT NULL;
+ALTER TABLE  moeiwast_eiwatest_DB01.test01_yamamoto MODIFY STAFF_NAME VARCHAR(50) NOT NULL;
+ALTER TABLE  moeiwast_eiwatest_DB01.test01_yamamoto MODIFY WORK_TIME DOUBLE(7,2);
+SELECT * FROM moeiwast_eiwatest_DB01.test01_yamamoto ORDER BY STAFF_NO,OFFICE_CD,STAFF_NAME;
+DESC moeiwast_eiwatest_DB01.test01_yamamoto;
+
+
+

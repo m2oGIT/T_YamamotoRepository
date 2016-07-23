@@ -1,0 +1,25 @@
+■問１の解答例SQL
+　サーバーDB：mysql -h m2o-eiwa.1strentalserver.info -P 3306 -u moeiwast_user02 -p  moeiwast_eiwatest_DB01
+　ローカルDB；mysql -u root -p
+
+■問２の解答例SQL
+　CREATE DATABASE moeiwast_eiwatest_DB01;
+
+■問３の解答例SQL
+　CREATE TABLE moeiwast_eiwatest_DB01.test_table(INT_NUM BIGINT(5), NAME_STR VARCHAR(40), DBL_NUM DOUBLE(6,3), CREATE_DATE DATE,
+ PRIMARY KEY(INT_NUM,NAME_STR)) CHARACTER SET sjis;
+
+■問４の解答例SQLファイル実行コマンド
+　\. C:\InsertTest.sql
+
+■問５の解答例SQL
+　SELECT * FROM moeiwast_eiwatest_DB01.test_table;
+
+■問６の解答例SQL
+　DESC moeiwast_eiwatest_DB01.test_table;
+
+■問７の解答例SQL
+　SELECT * FROM moeiwast_eiwatest_DB01.test_table WHERE CREATE_DATE between '2015-01-01' AND '2015-12-31';
+
+
+
