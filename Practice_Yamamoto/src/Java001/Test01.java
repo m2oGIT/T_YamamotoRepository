@@ -26,8 +26,7 @@ public class Test01 {
   public static void main( String[] args ) {
 
     //コメント文の差し替えテスト
-    //コメント文の差し替えテスト
-    //コメント文の差し替えテスト
+
   }
 
 }
