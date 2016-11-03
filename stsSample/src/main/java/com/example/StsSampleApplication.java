@@ -1,66 +1,42 @@
-package com.example;
+/**
+ * Copyright 2016 EIS Co., Ltd. All rights reserved.
+ */
 
-import java.net.InetAddress;
-import java.net.UnknownHostException;
-import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.HashMap;
+package com.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+/**
+ * @author yamamoto-t <br />
+ *         サンプル用ルートクラス <br />
+ *         アプリ起動の起点となるクラス <br />
+ *         更新履歴 2016/11/01 yamamoto-t：新規作成 <br />
+ */
 @SpringBootApplication
 @Controller
 public class StsSampleApplication extends SpringBootServletInitializer {
 
-    // public static void main(String[] args) {
-    // SpringApplication.run(StsSampleApplication.class, args);
+  // memo: SpringMVCはmainメソッドが最初に実行される。
+  public static void main( String[] args ) {
+    SpringApplication.run( StsSampleApplication.class, args );
+  }
 
-    public static void main(String[] args) {
-        SpringApplication.run(StsSampleApplication.class, args);
-    }
+  // memo:Springでwarを生成するために必要な記述。
+  @Override
+  protected SpringApplicationBuilder configure( SpringApplicationBuilder application ) {
+    return application.sources( StsSampleApplication.class );
+  }
 
-    @Override
-    protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-        return application.sources(StsSampleApplication.class);
-    }
+  // ルートからログイン画面にそのまま遷移
+  @RequestMapping(value = "/", method = RequestMethod.GET)
+  public String index() {
+    return "login/login_input";
+  }
 
-    // @RestControllerなら有効。
-    @RequestMapping(value = "test", method = RequestMethod.GET)
-    public String getSomething() {
-        return "文字列テスト";
-    }
-
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public String index(Model model) {
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-        model.addAttribute("now", sdf.format(new Date()));
-        //model.addAttribute("user", "me");
-        model.addAttribute("severInfo", this.getSeverInfo());
-        return "index";
-    }
-
-    private HashMap<String, String> getSeverInfo() {
-
-        HashMap<String, String> severInfo = new HashMap<String, String>();
-
-        try {
-            InetAddress addr = InetAddress.getLocalHost();
-            severInfo.put("hostname", addr.getHostName());
-            severInfo.put("hostadress", addr.getHostAddress());
-            // System.out.println("Local Host Name: " + addr.getHostName());
-            // System.out.println("IP Address : " + addr.getHostAddress());
-
-        } catch (UnknownHostException e) {
-            e.printStackTrace();
-        }
-        return severInfo;
-
-    }
 }
