@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 @EnableAutoConfiguration
 @RequestMapping(value = "login", method = RequestMethod.POST)
-public class loginController {
+public class LoginController {
 
   /**
    * ログイン処理メソッド<br />
