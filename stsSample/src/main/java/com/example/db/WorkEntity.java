@@ -4,6 +4,7 @@
 
 package com.example.db;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -15,14 +16,19 @@ import javax.persistence.Table;
  *         更新履歴 2016/11/01 yamamoto-t：新規作成 <br />
  */
 @Entity
-@Table(name = "test01_yamamoto") // memo:デフォルトはクラス名=テーブル名
+@Table(name = "test01_yamamoto") // memo:デフォルトはクラス名=テーブル名（省略可）
 public class WorkEntity {
 
-  @Id // memo:エンティティの主キーになるものに@Idを付ける
+  @Id // memo:エンティティの主キーとなるオブジェクト１つのみに@Idを付ける（省略不可）
+  @Column(name = "staff_no") // memo:@Columnでカラム名を紐づける（省略可）
   private String staff_no;
+  @Column(name = "office_cd")
   private String office_cd;
+  @Column(name = "staff_name")
   private String staff_name;
+  @Column(name = "work_time")
   private String work_time;
+  @Column(name = "create_date")
   private String create_date;
 
   /**

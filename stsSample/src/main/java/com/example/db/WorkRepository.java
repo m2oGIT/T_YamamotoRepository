@@ -22,6 +22,13 @@ public interface WorkRepository extends JpaRepository<WorkEntity, String> {
    * @see org.springframework.data.repository.
    * PagingAndSortingRepository#findAll(org.springframework.data.domain.Pageable)
    */
-  Page<WorkEntity> findAll( Pageable pageable );
+  /**
+   * 全件検索メソッド<br />
+   * 全件検索を実行する <br />
+   *
+   * @param pageable 許諾ページ情報（上限件数）
+   * @return Page 検索結果の格納されたページオブジェクト
+   */
+  Page<WorkEntity> findAll( Pageable pageable ); //記法は固定。
 
 }

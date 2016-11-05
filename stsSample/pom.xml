@@ -50,6 +50,7 @@
     </dependency>
 
  <!-- war生成時に組み込みTomcatを除外する設定。 -->
+ <!-- warのファイルサイズを削減するために、必須と言って良い。 -->
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-tomcat</artifactId>
