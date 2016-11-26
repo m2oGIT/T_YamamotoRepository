@@ -3,6 +3,8 @@
  */
 package Java001;
 
+import java.util.ArrayList;
+
 /**
  * @author （作成者） <br />
  *  （クラス論理名） <br />
@@ -27,6 +29,11 @@ public class Test02 {
   public static void main( String[] args ) {
     // TODO 自動生成されたメソッド・スタブ
     //別端末からリポジトリーを更新するテスト２
+    ArrayList<?> al = new ArrayList();
+//    al.add("1");
+//    al.add(new Integer(2));
+//    al.add("3");
+//    al.add(new Double(2.2));
 
   }
 

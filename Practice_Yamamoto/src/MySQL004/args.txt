@@ -1,4 +1,19 @@
+------------------------------------------------------------------------------------
+【MySQL004の実行時引数】
+
 "SELECT * FROM moeiwast_eiwatest_DB01.test01_yamamoto ORDER BY STAFF_NO"
 "INSERT INTO moeiwast_eiwatest_DB01.test01_yamamoto VALUES (10000000005,'003','愛媛　姫子',160,'2015/05/01')"
 "UPDATE moeiwast_eiwatest_DB01.test01_yamamoto SET CREATE_DATE = CURDATE() WHERE STAFF_NO in (10000000005)"
 "DELETE FROM  moeiwast_eiwatest_DB01.test01_yamamoto WHERE STAFF_NO = 10000000005"
+
+------------------------------------------------------------------------------------
+【MySQL005～006の実行時引数】
+
+"SELECT"
+"INSERT" "10000000006" "004" "北海道　五郎" "200" "2015/06/01"
+"UPDATE" "10000000006" "004" "北海道　五郎" "999"
+"DELETE" "10000000006" "004" "北海道　五郎"
+
+※WHERE句については全カラム指定しても良いが、PKだけでもレコードは一意に絞れる。
+
+------------------------------------------------------------------------------------
