@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="Shift_JIS">
+<title>はじめてのWebアプリケーション</title>
+</head>
+<body>
+Hello Web !!（自作）<br>
+<br>
+EchoServletへ値送信! <br>
+
+<form action="./EchoServlet">
+  <input type="text" name="param"/>
+  <input type="submit" value="EchoSevletへ送信！"/>
+</form>
+
+<form action="./EchoServlet" method="POST">
+  <input type="text" name="param"/>
+  <input type="submit" value="POSTメソッドでEchoSevletへ送信！"/>
+</form>
+
+<form action="./ForwardServlet" method="POST">
+  <input type="text" name="param"/>
+  <input type="submit" value="POSTメソッドでForwardSevletへ送信！"/>
+</form>
+
+<hr>
+買い物かごに入れる商品を入力してください。<br>
+<form action="./SessionServlet" method="POST">
+  <input type="text" name="param"/>
+  <input type="submit" value="買い物かごに入れる"/>
+</form>
+
+<form action="./SessionClearServlet" method="POST">
+  <input type="submit" value="買い物かごを空にする"/>
+</form>
+
+</body>
+</html>
