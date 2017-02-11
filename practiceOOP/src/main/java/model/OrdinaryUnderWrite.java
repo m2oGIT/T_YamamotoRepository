@@ -35,7 +35,7 @@ public class OrdinaryUnderWrite implements AbstractUnderWrite {
 
     // TODO 普通保険の査定ロジックを実装する
     System.out.println( "普通保険の査定ロジックを実装して下さい。" );
-
+    // 更新
     // 査定済みエンティティを返却する
     return entity;
   }

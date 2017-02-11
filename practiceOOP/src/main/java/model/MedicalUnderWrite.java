@@ -35,7 +35,7 @@ public class MedicalUnderWrite implements AbstractUnderWrite {
 
     // TODO 医療保険の査定ロジックを実装する
     System.out.println( "医療保険の査定ロジックを実装して下さい。" );
-
+    // 更新
     // 査定済みエンティティを返却する
     return entity;
   }
